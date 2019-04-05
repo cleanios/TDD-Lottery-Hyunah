@@ -104,7 +104,7 @@ class LottoStoreTests: XCTestCase {
         let firstLotto = Set(arrayLiteral: 16, 20, 24, 4, 36, 1)
         let secondeLotto = Set(arrayLiteral: 39, 20, 24, 4, 36, 1)
         //When
-        let result = self.lottoStore.getTotalRank(lottos: Set(arrayLiteral: firstLotto, secondeLotto))
+        let result = self.lottoStore.getTotalRank(lottos: [firstLotto, secondeLotto])
         //Then
         XCTAssertEqual(result[4], 2)
         XCTAssertEqual(result[5], 0)
@@ -114,7 +114,7 @@ class LottoStoreTests: XCTestCase {
         //Given
         let firstLotto = Set(arrayLiteral: 16, 20, 24, 4, 36, 1)
         //When
-        let result = self.lottoStore.getTotalRank(lottos: Set(arrayLiteral: firstLotto, firstLotto,firstLotto))
+        let result = self.lottoStore.getTotalRank(lottos: [firstLotto, firstLotto,firstLotto])
         //Then
         XCTAssertEqual(result[4], 3)
     }
