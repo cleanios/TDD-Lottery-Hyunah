@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC70B051225858A7003BC8FE /* LottoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70B050225858A7003BC8FE /* LottoResult.swift */; };
+		AC70B05322585A61003BC8FE /* LottoResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70B05222585A61003BC8FE /* LottoResultTests.swift */; };
 		ACBD7B21223E4374000E6BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD7B20223E4374000E6BF4 /* AppDelegate.swift */; };
 		ACBD7B23223E4374000E6BF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD7B22223E4374000E6BF4 /* ViewController.swift */; };
 		ACBD7B26223E4374000E6BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBD7B24223E4374000E6BF4 /* Main.storyboard */; };
 		ACBD7B28223E4376000E6BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBD7B27223E4376000E6BF4 /* Assets.xcassets */; };
 		ACBD7B2B223E4376000E6BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBD7B29223E4376000E6BF4 /* LaunchScreen.storyboard */; };
-		ACBD7B45223E9B8A000E6BF4 /* LottoStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD7B44223E9B8A000E6BF4 /* LottoStoreTests.swift */; };
-		ACBD7B47223E9D0C000E6BF4 /* LottoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD7B46223E9D0C000E6BF4 /* LottoStore.swift */; };
+		ACBD7B45223E9B8A000E6BF4 /* LottoShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD7B44223E9B8A000E6BF4 /* LottoShopTests.swift */; };
+		ACBD7B47223E9D0C000E6BF4 /* LottoShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD7B46223E9D0C000E6BF4 /* LottoShop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC70B050225858A7003BC8FE /* LottoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoResult.swift; sourceTree = "<group>"; };
+		AC70B05222585A61003BC8FE /* LottoResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoResultTests.swift; sourceTree = "<group>"; };
 		ACBD7B1D223E4374000E6BF4 /* LottoTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottoTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBD7B20223E4374000E6BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBD7B22223E4374000E6BF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,8 +40,8 @@
 		ACBD7B2C223E4376000E6BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBD7B31223E4376000E6BF4 /* LottoTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottoTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBD7B37223E4376000E6BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACBD7B44223E9B8A000E6BF4 /* LottoStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoStoreTests.swift; sourceTree = "<group>"; };
-		ACBD7B46223E9D0C000E6BF4 /* LottoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoStore.swift; sourceTree = "<group>"; };
+		ACBD7B44223E9B8A000E6BF4 /* LottoShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoShopTests.swift; sourceTree = "<group>"; };
+		ACBD7B46223E9D0C000E6BF4 /* LottoShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoShop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,8 @@
 			children = (
 				ACBD7B20223E4374000E6BF4 /* AppDelegate.swift */,
 				ACBD7B22223E4374000E6BF4 /* ViewController.swift */,
-				ACBD7B46223E9D0C000E6BF4 /* LottoStore.swift */,
+				ACBD7B46223E9D0C000E6BF4 /* LottoShop.swift */,
+				AC70B050225858A7003BC8FE /* LottoResult.swift */,
 				ACBD7B40223E60FE000E6BF4 /* Model */,
 				ACBD7B43223E6121000E6BF4 /* SupportedFile */,
 			);
@@ -91,7 +96,8 @@
 		ACBD7B34223E4376000E6BF4 /* LottoTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				ACBD7B44223E9B8A000E6BF4 /* LottoStoreTests.swift */,
+				ACBD7B44223E9B8A000E6BF4 /* LottoShopTests.swift */,
+				AC70B05222585A61003BC8FE /* LottoResultTests.swift */,
 				ACBD7B37223E4376000E6BF4 /* Info.plist */,
 			);
 			path = LottoTDDTests;
@@ -216,7 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACBD7B47223E9D0C000E6BF4 /* LottoStore.swift in Sources */,
+				ACBD7B47223E9D0C000E6BF4 /* LottoShop.swift in Sources */,
+				AC70B051225858A7003BC8FE /* LottoResult.swift in Sources */,
 				ACBD7B23223E4374000E6BF4 /* ViewController.swift in Sources */,
 				ACBD7B21223E4374000E6BF4 /* AppDelegate.swift in Sources */,
 			);
@@ -226,7 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACBD7B45223E9B8A000E6BF4 /* LottoStoreTests.swift in Sources */,
+				ACBD7B45223E9B8A000E6BF4 /* LottoShopTests.swift in Sources */,
+				AC70B05322585A61003BC8FE /* LottoResultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

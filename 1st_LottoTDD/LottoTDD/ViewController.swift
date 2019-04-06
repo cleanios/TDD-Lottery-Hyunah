@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let lottoStore = LottoStore(money: 5000)
+    let lottoShop = LottoShop(money: 5000)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let lottos = lottoStore.getLottos()
-        let _ = lottoStore.getTotalRank(lottos: lottos)
+        let lottos = lottoShop.lottoBundle()
+        LottoResult.totalRankOfLotto(lottos: lottos)
     }
 }
 
