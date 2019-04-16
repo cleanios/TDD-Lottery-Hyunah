@@ -40,27 +40,24 @@ class LottoShopTests: XCTestCase {
     
     func testGetLottos() {
         //Given
-        let lottoShop = LottoShop(money: 4000)
         //When
-        let lottos = lottoShop.lottoBundle()
+        let lottos = self.lottoShop.lottoBundle()
         //Then
         XCTAssertEqual(lottos.count, 4)
     }
 
-    func testpublishedLotto() {
+    func testPublishedLotto() {
         //Given
-        let lottoShop = LottoShop(money: 4000)
         //When
-        let result = lottoShop.publishedLotto().count
+        let result = self.lottoShop.publishedLotto().count
         //Then
         XCTAssertEqual(result, 6)
     }
     
-    func testpublishedLotto_ShouldNotHaveZero() {
+    func testPublishedLotto_ShouldNotHaveZero() {
         //Given
-        let lottoShop = LottoShop(money: 4000)
         //When
-        let result = lottoShop.publishedLotto()
+        let result = self.lottoShop.publishedLotto()
         //Then
         XCTAssertFalse(result.contains(0), "Lotto should not have zero")
     }

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let lottos = lottoShop.lottoBundle()
-        LottoResult.totalRankOfLotto(lottos: lottos)
+        LottoResult.totalRankings(lottos: lottos)
     }
 }
 

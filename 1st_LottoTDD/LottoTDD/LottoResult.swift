@@ -11,7 +11,7 @@ import Foundation
 struct LottoResult {
     static let luckyNumber = (basic: Set(arrayLiteral: 16, 20, 24, 28, 36, 39), bonus: 5)
 
-    static func rankOfLotto(lotto: Lotto) -> (same: Int, prize: Int, rank: Int?) {
+    static func rankings(lotto: Lotto) -> (same: Int, prize: Int, rank: Int?) {
         let sameNumber = lotto.intersection(self.luckyNumber.basic)
         switch sameNumber.count {
         case 0...2:
@@ -36,7 +36,7 @@ struct LottoResult {
     // 직관적이기 위해서 index 0은 고려하지 않는다.
     // Tip: @discardableResult을 달아주면 return값을 사용하지 않아도 warning이 뜨는걸 막아준다
     @discardableResult
-    static func totalRankOfLotto(lottos: [Lotto]) -> [Int] {
+    static func totalRankings(lottos: [Lotto]) -> [Int] {
         var result = [Int](repeating: 0, count: 6)
         defer {
             print("당첨통계")
@@ -47,7 +47,7 @@ struct LottoResult {
             }
         }
         for lotto in lottos {
-            if let rank = LottoResult.rankOfLotto(lotto: lotto).rank {
+            if let rank = LottoResult.rankings(lotto: lotto).rank {
                 result[rank] += 1
             }
         }
